@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 server.get("/", async (req, res) => {
-  res.send("Lambda Server Testing");
+  res.status(200).json("Lambda Server Testing");
 });
 
 module.exports = server;
